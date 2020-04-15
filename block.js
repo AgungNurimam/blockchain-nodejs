@@ -1,3 +1,5 @@
+const { GENISIS_DATA } = require('./config');
+
 class Block {
     constructor({ timestamp, lastHash, hash, data }) {
         this.timestamp = timestamp;
@@ -5,6 +7,13 @@ class Block {
         this.hash = hash;
         this.data = data;
     }
+
+    static genisis() {
+        // return new Block(GENISIS_DATA);
+        return new this(GENISIS_DATA);
+    }
 }
+
+
 
 module.exports = Block;
