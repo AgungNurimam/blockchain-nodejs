@@ -7,6 +7,11 @@ class Block {
     }
 }
 
-const block1 = new Block('01/01/01', 'foo-lastHash', 'foo-hash', 'foo-data');
+const block1 = new Block({
+    hash: 'foo-hash',
+    data: 'foo-data',
+    timestamp: '01/01/01',
+    lastHash: 'foo-lastHash',
+});
 
 console.log('XXX Block1', block1);
