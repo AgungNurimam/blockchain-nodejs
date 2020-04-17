@@ -9,8 +9,16 @@ class Block {
     }
 
     static genisis() {
-        // return new Block(GENISIS_DATA);
-        return new this(GENISIS_DATA);
+        return new Block(GENISIS_DATA);
+        // return new this(GENISIS_DATA);
+    }
+
+    static mineBlock({ lastBlock, data }) {
+        return new this({
+            timestamp: Date.now(),
+            lastHash: lastBlock.hash,
+            data
+        });
     }
 }
 
