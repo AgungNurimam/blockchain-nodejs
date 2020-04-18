@@ -1,4 +1,4 @@
-const { GENISIS_DATA } = require('./config');
+const { GENESIS_DATA } = require('./config');
 const cryptoHash = require('./crypto-hash');
 
 class Block {
@@ -9,9 +9,9 @@ class Block {
         this.data = data;
     }
 
-    static genisis() {
-        return new Block(GENISIS_DATA);
-        // return new this(GENISIS_DATA);
+    static genesis() {
+        return new Block(GENESIS_DATA);
+        // return new this(GENESIS_DATA);
     }
 
     static mineBlock({ lastBlock, data }) {

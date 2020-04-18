@@ -1,7 +1,7 @@
-const GENISIS_DATA = {
+const GENESIS_DATA = {
     timestamp: 1,
     lastHash: '-----',
     data: []
 };
 
-module.exports = { GENISIS_DATA };
+module.exports = { GENESIS_DATA };
